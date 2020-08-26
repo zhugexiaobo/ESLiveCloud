@@ -1,16 +1,41 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - ESLiveCloud (0.0.1)
+  - XLForm (4.1.0)
 
 DEPENDENCIES:
+  - AFNetworking
   - ESLiveCloud (from `../`)
+  - XLForm
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - XLForm
 
 EXTERNAL SOURCES:
   ESLiveCloud:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   ESLiveCloud: f10585f25f45a156bf3414ff859945a6fb8961a0
+  XLForm: 7ee02761be8a369d1ad1bbffe738b97083d94f3e
 
-PODFILE CHECKSUM: 65af9d7f49ba524888d6f9427c4a053d26f11fe1
+PODFILE CHECKSUM: c65d8aa7d108ffe80d93855bd05fb95c42a60392
 
 COCOAPODS: 1.10.0.beta.2

@@ -4,6 +4,8 @@ platform :ios, '9.0'
 
 target 'ESLiveCloud_Example' do
   pod 'ESLiveCloud', :path => '../'
+  pod 'AFNetworking'
+  pod 'XLForm'
 
   target 'ESLiveCloud_Tests' do
     inherit! :search_paths

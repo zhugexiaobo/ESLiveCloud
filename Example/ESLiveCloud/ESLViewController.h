@@ -6,8 +6,8 @@
 //  Copyright (c) 2020 zhugexiaobo. All rights reserved.
 //
 
-@import UIKit;
+#import "XLForm.h"
 
-@interface ESLViewController : UIViewController
+@interface ESLViewController : XLFormViewController
 
 @end
