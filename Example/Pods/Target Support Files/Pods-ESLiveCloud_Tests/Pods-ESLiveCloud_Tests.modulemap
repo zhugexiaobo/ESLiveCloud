@@ -1,0 +1,6 @@
+framework module Pods_ESLiveCloud_Tests {
+  umbrella header "Pods-ESLiveCloud_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

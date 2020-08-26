@@ -1,0 +1,16 @@
+PODS:
+  - ESLiveCloud (0.0.1)
+
+DEPENDENCIES:
+  - ESLiveCloud (from `../`)
+
+EXTERNAL SOURCES:
+  ESLiveCloud:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ESLiveCloud: f10585f25f45a156bf3414ff859945a6fb8961a0
+
+PODFILE CHECKSUM: 65af9d7f49ba524888d6f9427c4a053d26f11fe1
+
+COCOAPODS: 1.10.0.beta.2

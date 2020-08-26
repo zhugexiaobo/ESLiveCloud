@@ -1,0 +1,6 @@
+framework module ESLiveCloud {
+  umbrella header "ESLiveCloud-umbrella.h"
+
+  export *
+  module * { export * }
+}

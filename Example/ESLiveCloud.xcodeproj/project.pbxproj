@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23E5D022FE505130E53A3933 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		50DAA480506220D47B46FEE1 /* ESLiveCloud.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ESLiveCloud.podspec; path = ../ESLiveCloud.podspec; sourceTree = "<group>"; };
+		23E5D022FE505130E53A3933 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		50DAA480506220D47B46FEE1 /* ESLiveCloud.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ESLiveCloud.podspec; path = ../ESLiveCloud.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		51A136778E9B0D3A6B52476B /* Pods-ESLiveCloud_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESLiveCloud_Tests.release.xcconfig"; path = "Target Support Files/Pods-ESLiveCloud_Tests/Pods-ESLiveCloud_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ESLiveCloud_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESLiveCloud_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		75CF859E93477F1ECA50AE82 /* Pods-ESLiveCloud_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESLiveCloud_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ESLiveCloud_Tests/Pods-ESLiveCloud_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C59AAE39D4C137C61DD26AD /* Pods-ESLiveCloud_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESLiveCloud_Example.release.xcconfig"; path = "Target Support Files/Pods-ESLiveCloud_Example/Pods-ESLiveCloud_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EDBA5BD85467E13BAEFE5EEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EDBA5BD85467E13BAEFE5EEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				75CF859E93477F1ECA50AE82 /* Pods-ESLiveCloud_Tests.debug.xcconfig */,
 				51A136778E9B0D3A6B52476B /* Pods-ESLiveCloud_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				85B1F2BC3A16685D7A204DDD /* [CP] Embed Pods Frameworks */,
+				9726B779A836AB9727D2D8BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,22 +339,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85B1F2BC3A16685D7A204DDD /* [CP] Embed Pods Frameworks */ = {
+		9726B779A836AB9727D2D8BE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ESLiveCloud_Example/Pods-ESLiveCloud_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ESLiveCloud/ESLiveCloud.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ESLiveCloud_Example/Pods-ESLiveCloud_Example-resources.sh",
+				"${PODS_ROOT}/../../ESLiveCloud/ESLive-iOS.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESLiveCloud.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ESLive-iOS.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ESLiveCloud_Example/Pods-ESLiveCloud_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ESLiveCloud_Example/Pods-ESLiveCloud_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
